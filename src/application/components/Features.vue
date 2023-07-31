@@ -38,7 +38,7 @@
 				<img src="@/assets/images/feats.svg" class="flex-grow" />
 			</div>
 		</div>
-		<div class="w-full grid gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-2 text-center">
+		<div class="w-full grid gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-2 text-center relative">
 			<div class="w-full p-6 flex flex-col justify-center items-center min-h-[160px] lg:min-h-[220px] gap-4">
 				<img src="@/assets/images/Bulb.svg" class="h-10 w-10" alt="" />
 				<h3 class="font-bold text-base">Warp-Speed Trades</h3>
@@ -67,6 +67,13 @@
 					Our cutting-edge technology ensures you receive accurate insights and real-time data on token movements and market trends.
 				</span>
 			</div>
+			<div id="lowerfeatures" class="absolute left-0 top-0 right-0 bottom-0 z-[-1] hidden lg:block"></div>
 		</div>
 	</div>
 </template>
+
+<style>
+#lowerfeatures {
+	background: url('../assets/images/lowerfeatures-bg.png') no-repeat center center;
+}
+</style>
