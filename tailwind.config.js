@@ -11,10 +11,18 @@ module.exports = {
 			'2xl': '1536px'
 		},
 		extend: {
-			colors: {}
+			colors: {
+				dark: '#000212',
+				light: '#F7F8F8',
+				gray: {
+					DEFAULT: '#EFEDFD9A',
+					dark: '#B4BCD0',
+					border: '#ffffff25',
+				},
+			}
 		},
 		fontFamily: {
-			sans: ['Polysans', 'sans-serif']
+			sans: ['DM Sans', 'sans-serif']
 		}
 	},
 	plugins: [],
