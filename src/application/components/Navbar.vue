@@ -4,8 +4,8 @@
 		<div class="hidden lg:flex rounded-full mx-auto py-3 px-8 items-center gap-6 border border-gray">
 			<LinkTag to="/" @clicked="openMenu = false">About</LinkTag>
 			<LinkTag to="/" @clicked="openMenu = false">Tutorials</LinkTag>
-			<LinkTag to="/" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
-			<LinkTag to="/" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
+			<LinkTag :to="TwitterLink" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
+			<LinkTag :to="TelegramLink" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
 		</div>
 		<button class="bg-gradient ml-auto lg:ml-0">Start Trading</button>
 		<a class="text-2xl leading-none lg:hidden" @click="openMenu = true">
@@ -18,14 +18,15 @@
 				</a>
 				<LinkTag to="/" @clicked="openMenu = false">About</LinkTag>
 				<LinkTag to="/" @clicked="openMenu = false">Tutorials</LinkTag>
-				<LinkTag to="/" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
-				<LinkTag to="/" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
+				<LinkTag :to="TwitterLink" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
+				<LinkTag :to="TelegramLink" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
 			</div>
 		</transition>
 	</div>
 </template>
 
 <script setup lang="ts">
+import { TelegramLink, TwitterLink } from '@/constants'
 import { PrimeIcons } from 'primevue/api'
 
 const openMenu = ref(false)

@@ -9,9 +9,9 @@
 					<div class="flex flex-col flex-grow gap-4">
 						<h4>Quick Links</h4>
 						<a class="footer-link">Telegram Bot</a>
-						<a class="footer-link">Buy $JEETS</a>
-						<a class="footer-link">Telegram Group</a>
-						<a class="footer-link">Twitter</a>
+						<a class="footer-link" target="_blank" href="https://app.uniswap.org">Buy $JEETS</a>
+						<a class="footer-link" target="_blank" :href="TelegramLink">Telegram Group</a>
+						<a class="footer-link" target="_blank" :href="TwitterLink">Twitter</a>
 						<a class="footer-link">Contact Us</a>
 					</div>
 					<div class="flex flex-col flex-grow gap-4">
@@ -40,5 +40,6 @@
 </template>
 
 <script lang="ts" setup>
+import { TelegramLink, TwitterLink } from '@/constants'
 import { PrimeIcons } from 'primevue/api'
 </script>

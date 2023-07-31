@@ -4,7 +4,7 @@
 			<Navbar />
 			<CTA  />
 		</div>
-		<Features />
+		<Features class="mb-9 lg:mb-28" />
 		<Footer />
 	</div>
 </template>
