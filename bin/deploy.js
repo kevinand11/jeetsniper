@@ -7,7 +7,7 @@ import('execa').then(({ execaSync }) => {
 		execaSync('yarn', ['generate'])
 		const folderName = "dist"
 		execaSync('touch', [`${folderName}/.nojekyll`])
-		fs.writeFileSync(`${folderName}/CNAME`, 'sniper.jeets.gg')
+		fs.writeFileSync(`${folderName}/CNAME`, 'jeetsniper.com')
 		execaSync('git', ['--work-tree', folderName, 'add', '--all'])
 		execaSync('git', ['--work-tree', folderName, 'commit', '-m', 'gh-pages'])
 		console.log('Pushing to gh-pages...')
