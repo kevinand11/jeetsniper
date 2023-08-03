@@ -17,8 +17,8 @@
 					<i :class="PrimeIcons.ARROW_DOWN" />
 				</button>
 			</nuxt-link>
-			<button class="bg-gradient lg:hidden">
-				Start Trading
+			<button class="bg-gradient lg:hidden" :disabled="true">
+				Coming Soon
 			</button>
 		</div>
 		<div class="flex flex-col lg:flex-row gap-y-3 gap-x-8">

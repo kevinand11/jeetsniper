@@ -12,7 +12,7 @@
 				<h1 class="font-bold text-[32px] lg:text-[96px]">
 					$300,000+
 				</h1>
-				<span class="text-gray-dark lg:text-2xl">Total Trading Volume</span>
+				<span class="text-gray-dark lg:text-2xl">Predicted Trading Volume</span>
 			</div>
 			<div class="col-span-3 lg:col-span-2 grid-items flex flex-col justify-center items-center gap-4">
 				<img src="@/assets/images/lightning.svg" class="h-[160px] lg:h-[230px]" />

@@ -8,7 +8,7 @@
 			<LinkTag :to="TelegramLink" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
 		</div>
 		<div class="ml-auto lg:ml-0"></div>
-		<button class="bg-gradient hidden lg:inline-block">Start Trading</button>
+		<button class="bg-gradient hidden lg:inline-block" :disabled="true">Coming Soon</button>
 		<a class="text-2xl leading-none lg:hidden" @click="openMenu = true">
 			<i :class="PrimeIcons.ALIGN_RIGHT" />
 		</a>
