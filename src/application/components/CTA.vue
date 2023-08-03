@@ -1,6 +1,6 @@
 <template>
-	<div class="flex flex-col w-full justify-center lg:max-w-[1200px] mx-auto text-center items-center flex-grow gap-5 p-6">
-		<div class="rounded-full px-3 py-1 hidden lg:flex items-center gap-2 bg-[#ffffff19]">
+	<div class="flex flex-col w-full justify-center lg:max-w-[1200px] mx-auto text-center items-center flex-grow gap-10 p-6">
+		<div class="rounded-full px-3 py-1 hidden items-center gap-2 bg-[#ffffff19]">
 			<span>Join the $JEETS community</span>
 			<span class="rounded-full py-1 px-2 bg-[#ffffff0d] flex items-center justify-center">
 				<i :class="PrimeIcons.ARROW_RIGHT" />
@@ -11,10 +11,13 @@
 			Telegram Trading Bot
 		</h1>
 		<div class="flex gap-5">
-			<button class="border border-[#ffffff0f] flex items-center gap-2">
-				Explore Features <i :class="PrimeIcons.ARROW_UP_RIGHT" />
-			</button>
-			<button class="bg-gradient">
+			<nuxt-link to="#features">
+				<button class="border border-light flex items-center gap-2">
+					<span>Explore Features</span>
+					<i :class="PrimeIcons.ARROW_DOWN" />
+				</button>
+			</nuxt-link>
+			<button class="bg-gradient lg:hidden">
 				Start Trading
 			</button>
 		</div>

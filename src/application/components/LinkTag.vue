@@ -1,5 +1,5 @@
 <template>
-	<a @click="click" class="font-bold lg:font-normal"
+	<a :href="to" @click.prevent="click" class="font-bold lg:font-normal"
 		:class="{ 'active-link': route.fullPath === to }">
 		<slot />
 	</a>

@@ -2,7 +2,7 @@
 	<div class="flex items-center px-4 py-4 lg:py-6 lg:px-8 gap-6 border-b border-b-gray-border">
 		<img src="@/assets/images/logo.png" class="h-6 lg:h-8" />
 		<div class="hidden lg:flex rounded-full mx-auto py-3 px-8 items-center gap-6 border border-gray">
-			<LinkTag to="/" @clicked="openMenu = false">About</LinkTag>
+			<LinkTag to="#features" @clicked="openMenu = false">About</LinkTag>
 			<LinkTag to="/" @clicked="openMenu = false">Tutorials</LinkTag>
 			<LinkTag :to="TwitterLink" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
 			<LinkTag :to="TelegramLink" :external="true" @clicked="openMenu = false">Telegram</LinkTag>
@@ -17,7 +17,7 @@
 				<a class="text-2xl ml-auto" @click="openMenu = false">
 					<i :class="PrimeIcons.TIMES" />
 				</a>
-				<LinkTag to="/" @clicked="openMenu = false">About</LinkTag>
+				<LinkTag to="#features" @clicked="openMenu = false">About</LinkTag>
 				<LinkTag to="/" @clicked="openMenu = false">Tutorials</LinkTag>
 				<LinkTag :to="TwitterLink" :external="true" @clicked="openMenu = false">Twitter</LinkTag>
 				<LinkTag :to="TelegramLink" :external="true" @clicked="openMenu = false">Telegram</LinkTag>

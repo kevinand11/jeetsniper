@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full lg:max-w-[1200px] mx-auto flex flex-col py-8 px-6 items-center text-center">
+	<div class="w-full lg:max-w-[1200px] mx-auto flex flex-col py-8 lg:py-24 px-6 items-center text-center">
 		<h2 class="font-bold text-2xl lg:text-4xl mb-3 lg:mb-7">
 			Unlike Any Bot<br />
 			You’ve Used Before
@@ -24,7 +24,7 @@
 			<div class="col-span-3 lg:col-span-2 grid-items flex flex-col justify-center items-center gap-4">
 				<img src="@/assets/images/dash.svg" class="h-[180px] lg:h-[300px]" />
 				<h2 class="font-bold text-2xl lg:text-3xl">
-					$2,316,953
+					$0
 				</h2>
 				<span class="text-xs lg:text-base">Revenue Share Distributed</span>
 			</div>
